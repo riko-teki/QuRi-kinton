@@ -3,6 +3,13 @@ struct QR {
     pixel_size: u8,
 }
 
+enum ErrCorrectionLevel {
+    L,
+    M,
+    Q,
+    H,
+}
+
 impl QR {
     fn new(version: u8) -> Self {
         match version {
