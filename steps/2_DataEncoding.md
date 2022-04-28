@@ -28,6 +28,7 @@ QRコードのサイズの違いは***バージョン***と呼ばれ、利用可
 各バージョンはそれぞれ最大容量があり、最大容量は使用するモードに依存する。
 加えて誤り訂正レベルによってさらに制限される。
 ここに全てのバージョン、誤り訂正レベルのQRコード最大容量を記載する。
+https://github.com/riko-teki/QuRi-kinton/blob/main/steps/character_capacities_table.md
 
   1. 最小バージョンの決定方法
   2. 上限
