@@ -30,7 +30,11 @@ QRコードのサイズの違いは***バージョン***と呼ばれ、利用可
 https://github.com/riko-teki/QuRi-kinton/blob/main/steps/character_capacities_table.md
 
   1. 最小バージョンの決定方法
-  2. 上限
+  この時点でエンコード後の文字数をカウントし、指定されたエンコードモードと誤り訂正レベルの文字数を含めることができる最小バージョンを決定する。<br>
+  例えば、***HELLO WORLD***というフレーズは11文字である。![文字数容量テーブル](https://github.com/riko-teki/QuRi-kinton/blob/main/steps/character_capacities_table.md)を見るとバージョン1のQRコードで誤り訂正レベルQを使用した場合英数字16文字を含めることができる。<br>
+  つまり、バージョン1がこの文字数にとっての最小バージョンということになる。<br>
+  フレーズが***HELLO THERE WORLD***のように16文字より長い場合最小バージョンは2になる。<br>
+  3. 上限
 3. モードインジケータの追加
 4. 文字カウントインジケータの追加
   1. バージョン1から9
